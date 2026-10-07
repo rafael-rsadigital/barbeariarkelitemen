@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Página Inicial -->
+  <url>
+    <loc>https://barbeariarkelitemen.com.br/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Prótese Capilar -->
+  <url>
+    <loc>https://barbeariarkelitemen.com.br/protese-capilar.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Barbearia Tradicional -->
+  <url>
+    <loc>https://barbeariarkelitemen.com.br/barbearia-tradicional.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Barbearia Infantil -->
+  <url>
+    <loc>https://barbeariarkelitemen.com.br/barbearia-infantil.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Galeria -->
+  <url>
+    <loc>https://barbeariarkelitemen.com.br/galeria.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

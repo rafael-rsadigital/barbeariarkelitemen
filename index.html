@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RK Elite Men - Barbearia e Prótese Capilar no Guarujá</title>
+    <meta name="google-site-verification" content="WCimPMPOfFdJbQ8r8c44ah1VV30nO7Ai-yF704SedlU" />
+    <meta name="description" content="Barbearia premium no Guarujá especializada em cortes tradicionais, barboterapia, corte infantil e prótese capilar. Localizada na Vila Santa Rosa. Agende seu horário!">
+    <link rel="canonical" href="https://barbeariarkelitemen.com.br/" />
+    
+        <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/logo.ico">
+    
+    
+    <!-- OG Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="RK Elite Men - Barbearia e Prótese Capilar no Guarujá">
+    <meta property="og:description" content="Referência em prótese capilar e cortes masculinos no Guarujá. Ambiente climatizado na Vila Santa Rosa.">
+    <!-- IMAGEM SOCIAL LOCAL (Pasta images) -->
+    <meta property="og:image" content="https://barbeariarkelitemen.com.br/images/social-share.jpg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        montserrat: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        blue: {
+                            600: '#2563EB',
+                            700: '#1D4ED8',
+                        },
+                        dark: {
+                            900: '#0f0f0f',
+                            800: '#1a1a1a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #0f0f0f; color: white; }
+    </style>
+
+    <!-- JSON-LD LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["LocalBusiness", "BeautySalon"],
+      "name": "RK Elite Men - Barbearia e Prótese Capilar",
+      "image": "https://barbeariarkelitemen.com.br/images/logo.jpg",
+      "url": "https://barbeariarkelitemen.com.br",
+      "telephone": "+5513996670926",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Antonio Miguel dos Santos, 91 - Vila Santa Rosa",
+        "addressLocality": "Guarujá",
+        "addressRegion": "SP",
+        "postalCode": "11431-050",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -23.992307,
+        "longitude": -46.282181
+      },
+      "areaServed": ["Guarujá", "Vicente de Carvalho", "Vila Santa Rosa", "Enseada", "Pitangueiras"],
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "10:00",
+        "closes": "20:00"
+      }],
+      "priceRange": "$$"
+    }
+    </script>
+</head>
+<body class="antialiased">
+
+    <!-- HEADER -->
+    <header class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-white/10">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center overflow-hidden">
+                        <!-- LOGO LOCAL ATIVADO -->
+                        <img src="images/logo.jpg" alt="RK Elite Men" class="w-full h-full object-cover">
+                    </div>
+                    <span class="font-montserrat font-bold text-lg tracking-wider text-white">RK ELITE MEN</span>
+                </a>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex gap-8 text-sm font-medium text-gray-300">
+                <a href="#inicio" class="hover:text-blue-500 transition-colors">Início</a>
+                <a href="#servicos" class="hover:text-blue-500 transition-colors">Serviços</a>
+                <a href="galeria.html" class="hover:text-blue-500 transition-colors">Galeria</a>
+                <a href="#sobre" class="hover:text-blue-500 transition-colors">Sobre</a>
+                <a href="#depoimentos" class="hover:text-blue-500 transition-colors">Depoimentos</a>
+                <a href="#contato" class="hover:text-blue-500 transition-colors">Contato</a>
+            </nav>
+
+            <!-- CTA Button & Mobile Toggle -->
+            <div class="flex items-center gap-4">
+                <a href="https://online.maapp.com.br/Rkbarberclub" target="_blank" class="hidden md:flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded font-bold text-sm uppercase tracking-wide transition-all transform hover:scale-105 shadow-lg shadow-blue-900/20">
+                    <i data-lucide="calendar" width="18"></i>
+                    Agendar Horário
+                </a>
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <i data-lucide="menu" width="24"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-zinc-900 border-t border-zinc-800 p-4 w-full absolute top-full left-0 shadow-xl">
+            <nav class="flex flex-col gap-4 text-center">
+                <a href="#inicio" class="text-white py-2 border-b border-zinc-800">Início</a>
+                <a href="#servicos" class="text-white py-2 border-b border-zinc-800">Serviços</a>
+                <a href="galeria.html" class="text-white py-2 border-b border-zinc-800">Galeria</a>
+                <a href="#depoimentos" class="text-white py-2 border-b border-zinc-800">Depoimentos</a>
+                <a href="https://online.maapp.com.br/Rkbarberclub" target="_blank" class="bg-blue-600 text-white py-3 rounded font-bold uppercase mt-2">Agendar Agora</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (H1 AQUI AGORA!) -->
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center pt-20">
+        <div class="absolute inset-0 z-0">
+            <!-- IMAGEM LOCAL ATUALIZADA -->
+            <img src="images/foto-interna-da-barbearia-rk-elite-men.jpg" 
+                 alt="Interior da Barbearia RK Elite Men no Guarujá" 
+                 class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0f0f0f] via-[#0f0f0f]/50 to-black/80"></div>
+        </div>
+
+        <div class="container mx-auto px-4 z-10 relative mt-10 text-center md:text-left">
+            <div class="max-w-4xl">
+                <!-- H1 OTIMIZADO PARA SEO -->
+                <h1 class="font-montserrat text-4xl md:text-6xl font-bold leading-tight mb-6 text-white">
+                    RK Elite Men: <span class="text-blue-500">Barbearia e</span><br />
+                    <span class="text-blue-500">Prótese Capilar</span> no Guarujá
+                </h1>
+                <p class="text-gray-300 text-lg md:text-xl mb-8 font-light max-w-2xl">
+                    A arte do corte masculino, barba e recuperação da autoestima com estilo. Ambiente exclusivo na Vila Santa Rosa.
+                </p>
+                <a href="https://online.maapp.com.br/Rkbarberclub" target="_blank" class="bg-blue-600 hover:bg-blue-700 inline-flex items-center gap-2 px-8 py-4 rounded font-bold text-base uppercase tracking-wider text-white hover:shadow-xl hover:shadow-blue-600/20 transition-all">
+                    Agendar Horário
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE A RK (NOVO BLOCO DE CONTEÚDO SEO) -->
+    <section id="sobre" class="py-16 bg-zinc-900/50 border-b border-zinc-800">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-2xl md:text-3xl font-montserrat font-bold mb-6 text-white">
+                    Referência em <span class="text-blue-500">Cuidado Masculino</span> no Guarujá
+                </h2>
+                <div class="text-gray-400 space-y-4 text-lg leading-relaxed">
+                    <p>
+                        Localizada estrategicamente na <strong>Vila Santa Rosa</strong>, a RK Elite Men é mais do que uma barbearia; é um espaço dedicado ao homem moderno. Recebemos clientes de toda a região, incluindo <strong>Vicente de Carvalho</strong>, <strong>Enseada</strong> e <strong>Pitangueiras</strong>, que buscam excelência em cortes de cabelo e serviços de barba.
+                    </p>
+                    <p>
+                        Somos especialistas em <strong>prótese capilar masculina no Guarujá</strong>, oferecendo soluções que devolvem a autoestima com naturalidade e discrição. Nosso ambiente é climatizado, limpo e conta com profissionais altamente qualificados para o seu primeiro corte, manutenção ou transformação visual.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Ícones de Diferenciais -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center mt-12">
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 rounded-full bg-zinc-800 flex items-center justify-center text-blue-500 mb-4 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                        <i data-lucide="wind" width="32"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-white">Climatizado</h3>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 rounded-full bg-zinc-800 flex items-center justify-center text-blue-500 mb-4 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                        <i data-lucide="sparkles" width="32"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-white">Higiene Total</h3>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 rounded-full bg-zinc-800 flex items-center justify-center text-blue-500 mb-4 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                        <i data-lucide="coffee" width="32"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-white">Cafezinho</h3>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 rounded-full bg-zinc-800 flex items-center justify-center text-blue-500 mb-4 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                        <i data-lucide="map-pin" width="32"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-white">Vila Santa Rosa</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS (COM VÍDEOS EM AUTOPLAY) -->
+    <section id="servicos" class="py-20 bg-dark-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-montserrat font-bold mb-12 text-center text-white">
+                Nossos <span class="text-blue-500">Serviços</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1: Barbearia Tradicional -->
+                <div class="group bg-[#1a1a1a] rounded-xl overflow-hidden border border-white/5 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2">
+                    <div class="h-80 overflow-hidden relative"> <!-- Aumentei um pouco a altura para acomodar melhor o vídeo vertical -->
+                        <!-- VÍDEO EM LOOP -->
+                        <video autoplay muted loop playsinline class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" poster="images/servico-tradicional.jpg">
+                            <source src="videos/video-barbearia-tradicional.mp4" type="video/mp4">
+                        </video>
+                        <!-- Overlay leve para garantir leitura se o vídeo for muito claro -->
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-white">Barbearia Tradicional</h3>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">Barboterapia clássica com toalhas quentes, cortes precisos e uma experiência relaxante única.</p>
+                        <a href="barbearia-tradicional.html" class="text-blue-500 font-bold text-sm uppercase tracking-wide flex items-center gap-2 hover:gap-3 transition-all">
+                            Saiba Mais <i data-lucide="chevron-right" width="16"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Corte Infantil -->
+                <div class="group bg-[#1a1a1a] rounded-xl overflow-hidden border border-white/5 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2">
+                    <div class="h-80 overflow-hidden relative">
+                        <!-- VÍDEO EM LOOP -->
+                        <video autoplay muted loop playsinline class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" poster="images/servico-infantil.jpg">
+                            <source src="videos/video-corte-de-cabelo-infantil.mp4" type="video/mp4">
+                        </video>
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-white">Corte Infantil</h3>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">Atendimento especializado para crianças em ambiente seguro, divertido e acolhedor.</p>
+                        <a href="barbearia-infantil.html" class="text-blue-500 font-bold text-sm uppercase tracking-wide flex items-center gap-2 hover:gap-3 transition-all">
+                            Saiba Mais <i data-lucide="chevron-right" width="16"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Prótese Capilar -->
+                <div class="group bg-[#1a1a1a] rounded-xl overflow-hidden border border-white/5 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2">
+                    <div class="h-80 overflow-hidden relative">
+                        <!-- VÍDEO EM LOOP -->
+                        <video autoplay muted loop playsinline class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" poster="images/servico-protese.jpg">
+                            <source src="videos/video-protese-capilar.mp4" type="video/mp4">
+                        </video>
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-white">Prótese Capilar</h3>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">Especialização em prótese capilar com máxima naturalidade e recuperação da autoestima.</p>
+                        <a href="protese-capilar.html" class="text-blue-500 font-bold text-sm uppercase tracking-wide flex items-center gap-2 hover:gap-3 transition-all">
+                            Saiba Mais <i data-lucide="chevron-right" width="16"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos" class="py-20 bg-zinc-900/30">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-montserrat font-bold mb-12 text-center text-white">
+                O Que Dizem <span class="text-blue-500">Nossos Clientes</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-[#1a1a1a] p-8 rounded-xl border border-white/5 relative hover:border-blue-500/30 transition-colors">
+                    <div class="flex gap-1 text-blue-500 mb-4">
+                        <i data-lucide="star" fill="currentColor" width="16"></i>
+                        <i data-lucide="star" fill="currentColor" width="16"></i>
+                        <i data-lucide="star" fill="currentColor" width="16"></i>
+                        <i data-lucide="star" fill="currentColor" width="16"></i>
+                        <i data-lucide="star" fill="currentColor" width="16"></i>
+                    </div>
+                    <p class="text-gray-300 italic mb-6 leading-relaxed text-sm">"Fui surpreendido pelo ótimo atendimento e trabalho. Faço questão de andar mais pra receber um serviço de qualidade! A melhor Barbearia do Guarujá!"</p>
+                    <div class="flex items-center gap-3">
+                       <div class="w-8 h-1 bg-blue-600 rounded-full"></div>
+                       <span class="text-blue-500 font-bold text-sm">Héron Gonçalves</span>
+                    </div>
+                </div>
+
+                <div class="bg-[#1a1a1a] p-8 rounded-xl border border-white/5 relative hover:border-blue-500/30 transition-colors">
+                    <div class="flex gap-1 text-blue-500 mb-4">
+                        <i data-lucide="star" fill="currentColor" width="16"></i>
+                        <i data-lucide="star" fill="currentColor" width="16"></i>
+                        <i data-lucide="star" fill="currentColor" width="16"></i>
+                        <i data-lucide="star" fill="currentColor" width="16"></i>
+                        <i data-lucide="star" fill="currentColor" width="16"></i>
+                    </div>
+                    <p class="text-gray-300 italic mb-6 leading-relaxed text-sm">"Barbearia top, os caras mandam muito bem, eu particularmente acho muito bom o custo e benefício!"</p>
+                    <div class="flex items-center gap-3">
+                       <div class="w-8 h-1 bg-blue-600 rounded-full"></div>
+                       <span class="text-blue-500 font-bold text-sm">Lucas Oliveira</span>
+                    </div>
+                </div>
+
+                <div class="bg-[#1a1a1a] p-8 rounded-xl border border-white/5 relative hover:border-blue-500/30 transition-colors">
+                    <div class="flex gap-1 text-blue-500 mb-4">
+                        <i data-lucide="star" fill="currentColor" width="16"></i>
+                        <i data-lucide="star" fill="currentColor" width="16"></i>
+                        <i data-lucide="star" fill="currentColor" width="16"></i>
+                        <i data-lucide="star" fill="currentColor" width="16"></i>
+                        <i data-lucide="star" fill="currentColor" width="16"></i>
+                    </div>
+                    <p class="text-gray-300 italic mb-6 leading-relaxed text-sm">"Local super aconchegante, atendimento impecável, já cortei tanto com o Rennyson quando com o Otávio, meus parabéns a todos!"</p>
+                    <div class="flex items-center gap-3">
+                       <div class="w-8 h-1 bg-blue-600 rounded-full"></div>
+                       <span class="text-blue-500 font-bold text-sm">Mauricio Reis</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="https://www.google.com/maps/place/RK+Elite+Men+-+Barbearia+e+Pr%C3%B3tese+Capilar/@-23.992307,-46.282181,17z/data=!4m8!3m7!1s0x94cdff4b83632a89:0x3ca7f180225fe3cc!8m2!3d-23.992312!4d-46.2773154!9m1!1b1!16s%2Fg%2F11q1sdsymj?entry=ttu&amp;g_ep=EgoyMDI2MDIxMS4wIKXMDSoASAFQAw%3D%3D" 
+                   target="_blank" 
+                   class="inline-flex items-center gap-2 text-blue-500 hover:text-white font-medium text-sm transition-colors border-b border-blue-500/30 hover:border-blue-500 pb-1">
+                   Confira todos os depoimentos no Google
+                   <i data-lucide="external-link" width="16"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section id="contato" class="py-20 bg-dark-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-montserrat font-bold mb-12 text-center text-white">
+                Nossa <span class="text-blue-500">Localização</span>
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-8 items-center max-w-5xl mx-auto">
+                <div class="space-y-8">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-blue-900/20 p-3 rounded-full text-blue-500">
+                            <i data-lucide="map-pin" width="32"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 text-white">Endereço</h3>
+                            <p class="text-gray-400">Rua Antonio Miguel dos Santos, 91</p>
+                            <p class="text-gray-400">Vila Santa Rosa, Guarujá - SP</p>
+                            <p class="text-gray-400">CEP: 11431-050</p>
+                        </div>
+                    </div>
+                    
+                    <a href="https://online.maapp.com.br/Rkbarberclub" target="_blank" class="inline-block w-full text-center bg-blue-600 hover:bg-blue-700 text-white py-4 rounded font-bold uppercase tracking-wide transition-colors">
+                        Agendar Agora
+                    </a>
+                </div>
+
+                <div class="h-[350px] rounded-xl overflow-hidden shadow-2xl border border-white/10 relative bg-zinc-800">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.09826099632!2d-46.28218095253097!3d-23.99230702229675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdff4b83632a89%3A0x3ca7f180225fe3cc!2sRK%20Elite%20Men%20-%20Barbearia%20e%20Pr%C3%B3tese%20Capilar!5e0!3m2!1spt-BR!2sbr!4v1771346910275!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black pt-16 pb-8 border-t border-zinc-800">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <span class="font-montserrat font-bold text-xl text-white">RK ELITE MEN</span>
+                    </div>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Mais do que uma barbearia: ambiente confortável, climatizado e pensado para seu bem-estar.
+                    </p>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="font-bold text-lg mb-6 text-white">Links Rápidos</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="#servicos" class="hover:text-blue-500 transition-colors">Serviços</a></li>
+                        <li><a href="galeria.html" class="hover:text-blue-500 transition-colors">Galeria</a></li>
+                        <li><a href="#sobre" class="hover:text-blue-500 transition-colors">Sobre Nós</a></li>
+                        <li><a href="#depoimentos" class="hover:text-blue-500 transition-colors">Depoimentos</a></li>
+                        <li><a href="#contato" class="hover:text-blue-500 transition-colors">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-bold text-lg mb-6 text-white">Contato</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="text-blue-500 shrink-0 mt-1" width="18"></i>
+                            <span>Rua Antonio Miguel dos Santos, 91<br/>Vila Santa Rosa, Guarujá - SP</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="phone" class="text-blue-500 shrink-0" width="18"></i>
+                            <span>(13) 99667-0926</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="clock" class="text-blue-500 shrink-0 mt-1" width="18"></i>
+                            <span>Seg-Sáb: 10:00 - 20:00<br/>Dom: Fechado</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social -->
+                <div>
+                    <h4 class="font-bold text-lg mb-6 text-white">Redes Sociais</h4>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/elitemen.rk/" target="_blank" class="w-10 h-10 rounded bg-zinc-800 flex items-center justify-center hover:bg-blue-600 transition-colors text-white">
+                            <i data-lucide="instagram" width="20"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" class="w-10 h-10 rounded bg-zinc-800 flex items-center justify-center hover:bg-blue-600 transition-colors text-white">
+                            <i data-lucide="facebook" width="20"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-zinc-800 pt-8 text-center">
+                <p class="text-gray-600 text-sm">© 2026 RK Elite Men. Todos os direitos reservados.</p>
+            </div>
+
+            <!-- SEO Block (Rodapé) - Alterado para H2 para evitar conflito de H1 -->
+            <div class="mt-8 pt-8 border-t border-zinc-900 text-center">
+                <h2 class="text-sm text-zinc-700 font-bold mb-2">RK Elite Men – Barbearia e Prótese Capilar no Guarujá</h2>
+                <p class="text-xs text-zinc-800 max-w-2xl mx-auto">
+                   Barbearia premium especializada em cortes tradicionais, prótese capilar masculina, barba, acabamento e atendimento infantil no Guarujá.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
